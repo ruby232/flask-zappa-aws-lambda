@@ -1,0 +1,24 @@
+{
+    "dev": {
+        "app_function": "src.main.app",
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "my-api",
+        "runtime": "python3.10",
+        "s3_bucket": "bucket-my-lambda-dev",
+        "cors": true,
+        "manage_roles": true,
+        "api_key_required": true
+    }  ,
+    "prod": {
+        "app_function": "src.main.app",
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "my-api",
+        "runtime": "python3.10",
+        "s3_bucket": "bucket-my-lambda-prod",
+        "cors": true,
+        "manage_roles": true,
+        "api_key_required": true
+    }
+}

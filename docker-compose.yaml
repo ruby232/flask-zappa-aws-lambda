@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    image: my-api:latest
+    environment:
+      FLASK_APP: src.main
+    volumes:
+      - .:/app
+    ports:
+      - 3000:3000
+    command: "flask run -h 0.0.0.0 -p 3000 --debug"
